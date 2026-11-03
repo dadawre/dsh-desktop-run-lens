@@ -2,19 +2,15 @@
 
 > DSH Desktop 工作台插件：把一段 agent 运行过程变成一张可以缩放、点击、下钻的图。左边保留原生对话，右边用**会话 / 时间线 / 全景图**三种视图查看整个过程。
 
-![运行透视全景图](docs/images/panorama.png)
+![运行透视：左侧为 DSH Desktop 原生会话，右侧为全景图分析面板](docs/images/overview.png)
 
 **Run Lens** is a DSH Desktop workbench plugin that visualizes an entire agent run — turns, steps, model calls, tool calls, subagents (including nested levels) — as a single zoomable panorama, plus chat-style and timeline views, with on-demand full content, smooth reasoning playback, and a heuristic divergence check.
 
 ## 截图
 
-| 全景图（默认视图） | 时间线视图 |
-| --- | --- |
-| ![全景图](docs/images/panorama.png) | ![时间线](docs/images/timeline.png) |
+![运行透视：左侧为 DSH Desktop 原生会话，右侧为全景图分析面板](docs/images/overview.png)
 
-| 会话视图 | 步骤详情 |
-| --- | --- |
-| ![会话](docs/images/chat.png) | ![详情](docs/images/inspector.png) |
+> 截图来自 DSH Desktop 0.13.1 + 运行透视 0.5.6（Windows 11）。左侧是宿主原生对话，右侧是工作台的「全景图」视图。
 
 ## 为什么用它
 

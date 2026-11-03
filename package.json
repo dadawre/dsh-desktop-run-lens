@@ -1,0 +1,56 @@
+{
+  "name": "dsh-desktop-run-lens",
+  "version": "0.5.6",
+  "description": "运行透视：在 DSH Desktop 工作台里用会话 / 时间线 / 全景图三种视图查看整段 agent 运行——全景图把主会话所有回合、工具调用与子代理（含嵌套层级，默认全部直接展开）画在同一张图里，并支持回合跳转、定位最新、完整内容按需加载、丝滑思考、思路偏离对照、搜索筛选与键盘快捷键。",
+  "type": "module",
+  "main": "./dsh/index.js",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "dsh",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "dadawre",
+    "url": "https://github.com/dadawre"
+  },
+  "homepage": "https://github.com/dadawre/dsh-desktop-run-lens#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dadawre/dsh-desktop-run-lens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dadawre/dsh-desktop-run-lens/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-desktop",
+    "workbench",
+    "agent",
+    "trace",
+    "visualization",
+    "llm"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "dsh-desktop-workbenches"
+      ]
+    }
+  }
+}

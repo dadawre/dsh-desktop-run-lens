@@ -1,0 +1,7 @@
+node_modules/
+*.tgz
+*.tar.gz
+.DS_Store
+Thumbs.db
+.pnpm-debug.log
+*.log

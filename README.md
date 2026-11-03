@@ -55,7 +55,7 @@ pnpm pack
 
 ### 工作台市场
 
-工作台市场收录流程进行中；上架后会支持在工作台市场「已安装 / 发现」中直接安装。
+已向 DSH 官方工作台市场提交收录 PR（[dataelement/awesome-dsh-workbench#71](https://github.com/dataelement/awesome-dsh-workbench/pull/71)）。审核通过并更新市场目录后，可直接在工作台市场安装；在此之前请用上面的 Release 安装方式。
 
 ## 使用
 
